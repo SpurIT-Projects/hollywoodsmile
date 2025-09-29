@@ -1,0 +1,125 @@
+{
+    "company": {
+        "full_name": "ИП Прибытков Виталий Адольфович",
+        "trade_name": "Hollywood★Smile",
+        "UNP": "123456789",
+        "license": {
+            "number": "М-6789",
+            "date": "15.03.2020",
+            "issued_by": "Министерство здравоохранения Республики Беларусь"
+        },
+        "address": {
+            "country": "Беларусь",
+            "city": "Минск",
+            "street": "ул. Богдановича, 6-3н",
+            "postal_code": "220030"
+        },
+        "contact": {
+            "phones": [
+                "+375 (29) 123-45-67",
+                "+375 (17) 234-56-78"
+            ],
+            "emails": [
+                "info@hollywoodsmile.by",
+                "reception@hollywoodsmile.by"
+            ],
+            "website": "https://hollywoodsmile.by",
+            "social_media": {
+                "instagram": "https://www.instagram.com/hollywoodsmile.by/",
+                "facebook": "https://www.facebook.com/hollywoodsmile.by/",
+                "telegram": "https://t.me/hollywoodsmile_by"
+            }
+        },
+        "business_info": {
+            "years_in_business": 27,
+            "founded": 1997,
+            "specialization": "Стоматологическая имплантация",
+            "services": [
+                "Имплантация зубов",
+                "Протезирование",
+                "Металлокерамические коронки",
+                "Циркониевые коронки",
+                "All-on-4 имплантация",
+                "All-on-6 имплантация",
+                "Синус-лифтинг",
+                "Костная пластика"
+            ],
+            "implant_systems": [
+                {
+                    "brand": "Straumann",
+                    "country": "Швейцария",
+                    "warranty": "пожизненная"
+                },
+                {
+                    "brand": "Megagen",
+                    "country": "Корея",
+                    "warranty": "пожизненная"
+                }
+            ]
+        },
+        "staff": {
+            "head_doctor": {
+                "name": "Прибытков Виталий Адольфович",
+                "position": "Стоматолог-ортопед, врач 1 категории",
+                "experience_years": 27,
+                "education": [
+                    "Белорусский государственный медицинский университет",
+                    "Специализация: стоматология ортопедическая"
+                ],
+                "certifications": [
+                    "Сертификат специалиста по ортопедической стоматологии",
+                    "Сертификат по имплантологии Straumann",
+                    "Сертификат по имплантологии Megagen"
+                ]
+            }
+        },
+        "working_hours": {
+            "monday_friday": "09:00-20:00",
+            "saturday": "10:00-16:00",
+            "sunday": "выходной"
+        },
+        "verified_sources": [
+            {
+                "type": "official_website",
+                "url": "https://hollywoodsmile.by",
+                "verified_date": "2024-09-22"
+            },
+            {
+                "type": "business_registry",
+                "source": "Единый государственный регистр юридических лиц и индивидуальных предпринимателей Республики Беларусь",
+                "verified_date": "2024-09-22"
+            },
+            {
+                "type": "medical_license",
+                "source": "Министерство здравоохранения Республики Беларусь",
+                "verified_date": "2024-09-22"
+            },
+            {
+                "type": "maps_listing",
+                "source": "Google Maps / Яндекс.Карты",
+                "verified_date": "2024-09-22"
+            }
+        ],
+        "quality_indicators": {
+            "successful_operations": "5000+",
+            "success_rate": "98%",
+            "patient_satisfaction": "95%",
+            "warranty_claims": "<2%"
+        },
+        "awards_certifications": [
+            "Лучший имплантолог Беларуси 2023",
+            "Сертификат качества ISO 9001",
+            "Участник первых операций по имплантации в Беларуси"
+        ]
+    },
+    "meta": {
+        "created_date": "2024-09-22",
+        "last_updated": "2024-09-22",
+        "version": "1.0",
+        "data_sources": [
+            "официальный сайт hollywoodsmile.by",
+            "регистрационные документы",
+            "лицензии и сертификаты"
+        ]
+    }
+}

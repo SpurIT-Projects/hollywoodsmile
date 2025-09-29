@@ -1,0 +1,22 @@
+{
+    "name": "Hollywood★Smile - Стоматология в Минске",
+    "short_name": "Hollywood★Smile",
+    "description": "Профессиональная имплантация зубов в Минске. Более 27 лет опыта, лучшие имплантологи Беларуси",
+    "icons": [
+        {
+            "src": "favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#d4af37",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}

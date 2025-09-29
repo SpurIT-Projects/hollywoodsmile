@@ -1,0 +1,168 @@
+/* Hollywood Smile - Стили футера */
+
+.footer {
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-section p,
+.footer-section li {
+    margin-bottom: 10px;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    padding: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--primary-color);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    color: var(--primary-color);
+    margin-right: 12px;
+    width: 20px;
+}
+
+.contact-item a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--primary-color);
+}
+
+.working-hours {
+    margin-top: 15px;
+}
+
+.working-hours h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.legal-info {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.legal-info strong {
+    color: var(--primary-color);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Отзывчивость */
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 0 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer-nav {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

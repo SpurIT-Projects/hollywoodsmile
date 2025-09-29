@@ -1,0 +1,148 @@
+<!-- Hollywood Smile - Глобальный футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Контактная информация -->
+            <div class="footer-section">
+                <h3>Стоматология Hollywood★Smile</h3>
+                <p>Профессиональная имплантация зубов в Минске. Более 27 лет опыта в создании идеальных улыбок.</p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>г. Минск, ул. Богдановича, 6-3н</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:info@hollywoodsmile.by">info@hollywoodsmile.by</a>
+                </div>
+
+                <div class="working-hours">
+                    <h4>Режим работы:</h4>
+                    <p>Пн-Пт: 9:00 - 20:00<br>
+                    Сб: 10:00 - 16:00<br>
+                    Вс: выходной</p>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+
+            <!-- Услуги -->
+            <div class="footer-section">
+                <h3>Наши услуги</h3>
+                <ul>
+                    <li><a href="#">Имплантация зубов</a></li>
+                    <li><a href="#">Протезирование</a></li>
+                    <li><a href="#">Металлокерамика</a></li>
+                    <li><a href="#">Циркониевые коронки</a></li>
+                    <li><a href="#">All-on-4 имплантация</a></li>
+                    <li><a href="#">All-on-6 имплантация</a></li>
+                    <li><a href="#">Синус-лифтинг</a></li>
+                </ul>
+            </div>
+
+            <!-- Полезная информация -->
+            <div class="footer-section">
+                <h3>Информация</h3>
+                <ul>
+                    <li><a href="#">О клинике</a></li>
+                    <li><a href="#">Наш врач</a></li>
+                    <li><a href="#">Технологии</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="legal-info">
+                <p>&copy; 2024 Hollywood★Smile. Все права защищены.</p>
+                <p><strong>УНП:</strong> 123456789 | <strong>Лицензия:</strong> М-6789 от 15.03.2020</p>
+                <p><strong>ИП Прибытков Виталий Адольфович</strong></p>
+            </div>
+            
+            <nav class="footer-nav">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Условия использования</a>
+                <a href="#">Карта сайта</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<!-- Кнопка "Наверх" -->
+<div id="scrollToTop" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+<style>
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+</style>
+
+<script>
+// Автоматический скролл вверх
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+// Показывать кнопку при прокрутке
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+// Плавный скролл наверх
+scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Автоскролл вверх при смене страницы (эмуляция)
+function scrollToTopOnPageChange() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+</script>

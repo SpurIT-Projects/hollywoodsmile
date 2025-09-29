@@ -1,0 +1,148 @@
+/* Hollywood Smile - Стили хедера */
+
+.header {
+    background: var(--accent-color);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+}
+
+.logo-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu li a {
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    color: var(--primary-color);
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.header-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.header-phone {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+}
+
+.header-address {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* Мобильное меню */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--accent-color);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin-bottom: 15px;
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 10px 0;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
